@@ -3,10 +3,10 @@ name: gateway CI/CD
 on:
   push:
     branches:
-      - gateway
+      - main
   pull_request:
     branches:
-      - gateway
+      - main
 
 jobs:
   # 잡 전체에 대한 이름 (custom 가능)
