@@ -55,6 +55,8 @@ public class ApiGatewayApplication {
                         r -> r.path("/pub/**").uri(gatewayKm)  )
                 .route("sk_pjt2_back_chat",
                         r -> r.path("/sub/**").uri(gatewayKm)  )
+                .route("sk_pjt2_back_chat",
+                        r -> r.path("/inquiry/**").uri(gatewayKm)  )
                 // sj
                 .route("sk_ptj2_products",
                         r -> r.path("/pdts/**").uri(gatewayPs)  )

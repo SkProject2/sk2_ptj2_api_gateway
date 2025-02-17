@@ -49,7 +49,8 @@ public class SecurityConfig {
                                 "/test/**","/room/**",
                                 "/pub/**","/sub/**",
                                 "/pdts/**","/wishlist/**",
-                                "/chat/**","/home/**")
+                                "/chat/**","/home/**",
+                                "/inquiry/**")
                         .permitAll()
 
                         .anyExchange().authenticated() )
