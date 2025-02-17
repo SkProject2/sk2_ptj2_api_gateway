@@ -53,6 +53,7 @@ public class SecurityConfig {
                                 "/inquiry/**")
                         .permitAll()
 
+
                         .anyExchange().authenticated() )
                 .exceptionHandling(exception -> {
                     exception
