@@ -47,9 +47,8 @@ public class SecurityConfig {
 
                 .authorizeExchange(authorizeExchangeSpec -> authorizeExchangeSpec
                         .pathMatchers("/user/**", "/auth/**","/pdts/**","/home/**"
-                                ,"/room/**","/chat/**","wishlist"
+                                ,"/room/**","/chat/**","/wishlist/**"
 //                                "/pub/**","/sub/**",
-//                                "/wishlist/**",
 //                                "/chat/**","/inquiry/**"
                         )
                         .permitAll()
