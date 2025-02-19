@@ -45,12 +45,12 @@ public class SecurityConfig {
                 .securityContextRepository(NoOpServerSecurityContextRepository.getInstance())
 
                 .authorizeExchange(authorizeExchangeSpec -> authorizeExchangeSpec
-                        .pathMatchers("/user/**", "/auth/**",
-                                "/test/**","/room/**",
-                                "/pub/**","/sub/**",
-                                "/pdts/**","/wishlist/**",
-                                "/chat/**","/home/**",
-                                "/inquiry/**")
+                        .pathMatchers("/user/**", "/auth/**","/pdts/**","/home/**"
+//                                "/test/**","/room/**",
+//                                "/pub/**","/sub/**",
+//                                "/pdts/**","/wishlist/**",
+//                                "/chat/**","/inquiry/**"
+                        )
                         .permitAll()
 
 
