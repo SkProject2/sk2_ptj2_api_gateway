@@ -29,6 +29,7 @@ public class SecurityConfig {
                 .cors(corsSpec -> corsSpec.configurationSource(request -> {
                     CorsConfiguration corsConfig = new CorsConfiguration();
                     corsConfig.addAllowedOrigin("http://localhost:3000"); // 리액트 클라이언트 도메인
+                    corsConfig.addAllowedOrigin("http://183.111.123.137:3000");
                     corsConfig.addAllowedMethod("*");  // 모든 HTTP 메서드 허용 (GET, POST, PUT, DELETE 등)
                     corsConfig.addAllowedHeader("*");  // 모든 헤더 허용
                     corsConfig.setAllowCredentials(true);  // 자격 증명 포함 허용
